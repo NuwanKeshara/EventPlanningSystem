@@ -1,0 +1,66 @@
+body{
+	background-image: url('../images/pb.jpg')
+}
+
+table{
+	width: 90% !important;
+}
+
+h2{
+	font-family: Arial; 
+	color: white !important; 
+	font-size: 45px !important;
+}
+
+h1{
+	color:white !important;
+}
+
+a:hover{
+	text-decoration: none !important;
+	color:red !important;
+}
+
+a{
+	color:white !important;
+}
+
+.h1-text1{
+	font-size: 60px;
+}
+
+.h1-text2{
+	font-size: 40px;
+}
+
+.a-text1{
+	font-size: 60px;
+}
+
+.a-text2{
+	font-size: 30px;
+}
+
+td{
+	text-align: center; 
+	font-size: 20px;
+}
+
+#hidden{
+	background-color: blue;
+}
+
+thead:nth-of-type(1) tr {
+	color: #8A2BE2;
+}
+
+th{
+	font-size: 27px; 
+	width: 150px !important; 
+	text-align: center !important;
+	height:65px;
+}
+
+#hash{
+	width:50px !important;
+}

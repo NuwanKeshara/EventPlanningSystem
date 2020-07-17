@@ -1,0 +1,11 @@
+.btn-change7{
+    
+    background: blue !important;
+    box-shadow: 0 0 1px #ccc;
+    -webkit-transition-duration: 0.6s;
+    -webkit-transition-timing-function: linear;
+    box-shadow:0px 0 0 #31708f  inset;
+}
+.btn-change7:hover{
+    box-shadow:150px 0 0 red inset;
+}

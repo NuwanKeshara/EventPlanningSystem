@@ -1,0 +1,43 @@
+body{
+	background-image: url('../images/pb.jpg');
+}
+
+h1{
+	font-size:60px !important;
+	color:white !important; 
+}
+
+a{
+	font-size:60px !important;
+	color:white !important; 
+}
+
+a:hover{
+	color:red !important;
+	text-decoration: none ;
+}
+
+h2{
+	font-family:Arial; 
+	color:white; 
+	font-size:45px;
+}
+
+table{
+	width:90% !important;
+}
+
+th{
+	font-size:24px;
+	width:200px;
+	text-align:center;
+}
+
+td{
+	text-align:center !important; 
+	font-size:20px ;
+}
+
+#hash{
+	width:30px !important;
+}

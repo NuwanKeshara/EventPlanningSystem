@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Query>
+	
+	<!-- Select all Admins Query-->
+	<query id="SELECT_ADMINS_SQL">
+         <![CDATA[        
+            SELECT * FROM admin 
+        ]]>
+	</query>
+	
+	<!-- Select all Clients Query-->
+	<query id="SELECT_CLIENTS_SQL">
+         <![CDATA[        
+            SELECT * FROM client 
+        ]]>
+	</query>
+	
+	<!-- Get number of rows in the user table Query-->
+	<query id="COUNT_ROWS_CLIENTS">
+         <![CDATA[        
+            SELECT COUNT(*) FROM client 
+        ]]>
+	</query>
+	
+	<!-- Get number of rows in the admin table Query-->
+	<query id="COUNT_ROWS_ADMINS">
+         <![CDATA[        
+            SELECT COUNT(*) FROM admin 
+        ]]>
+	</query>
+	
+	<!-- Get particular admin username and password Query -->
+	<query id="SELECT_ADMIN_SQL">
+         <![CDATA[        
+            SELECT userName , password FROM admin 
+        ]]>
+	</query>
+	
+	<!-- Insert data into user table Query-->
+	<query id="INSERT_CLIENTS_SQL">
+         <![CDATA[        
+            INSERT INTO client(ID , firstName , lastName , contact , email , userName , password) values(?,?,?,?,?,?,?) 
+        ]]>
+	</query>
+	
+	<!--Delete a particular Admin by id Query  -->
+	<query id="DELETE_ADMIN_SQL">
+         <![CDATA[        
+            DELETE FROM admin WHERE ID=? 
+        ]]>
+	</query>
+	
+	<!--Delete a particular Client by id Query  -->
+	<query id="DELETE_CLIENT_SQL">
+         <![CDATA[        
+            DELETE FROM client WHERE ID=?
+        ]]>
+	</query>
+	
+	<!-- Select particular admin's details by id Query-->
+	<query id="SELECT_A_ADMIN_SQL">
+         <![CDATA[        
+            SELECT * FROM admin WHERE ID=?
+        ]]>
+	</query>
+	
+	<!-- update admin details Query-->
+	<query id="UPDATE_ADMIN_SQL">
+         <![CDATA[        
+            UPDATE admin SET firstName=? , lastName=? , contact=? , address=? , password=? WHERE ID = ?
+        ]]>
+	</query>
+	
+	<!-- select username and password of all clients in table Query-->
+	<query id="SELECT_A_CLIENT_SQL">
+         <![CDATA[        
+            SELECT userName , password FROM client
+        ]]>
+	</query>
+	
+	<!-- select a particular admin details by username Query-->
+	<query id="SELECT_ADMIN_TO_CHECK_SQL">
+         <![CDATA[        
+            SELECT * FROM admin WHERE userName=?
+        ]]>
+	</query>
+	
+	<!-- select a particular client details by username Query-->
+	<query id="SELECT_CLIENT_TO_CHECK_SQL">
+         <![CDATA[        
+            SELECT * FROM client WHERE userName=?
+        ]]>
+	</query>
+	
+	<!-- Insert data into admin table Query-->
+	<query id="INSERT_ADMIN_SQL">
+         <![CDATA[        
+            INSERT INTO admin values (?,?,?,?,?,?,?)
+        ]]>
+	</query>
+	
+	<!-- Insert dafult data to admin table Query-->
+	<query id="DEFAULT_ADMIN">
+         <![CDATA[        
+            INSERT INTO admin values ('AD1000','','','','','root','root')
+        ]]>
+	</query>
+	
+	
+	<!-- Create table admin Query -->
+	<query id="CREATE_TABLE_ADMIN">
+        <![CDATA[
+            CREATE TABLE admin(
+				ID varchar(45) not null,
+				firstName varchar(45),
+				lastName varchar(45),
+				contact varchar(45),
+				address varchar(45),
+				userName  varchar(45),
+				password varchar(45),
+				primary key (ID)
+			)
+        ]]>
+	</query>
+	
+	<!-- Create table client Query -->
+	<query id="CREATE_TABLE_CLIENT">
+        <![CDATA[
+            CREATE TABLE client(
+				ID varchar(45) not null,
+				firstName varchar(45),
+				lastName varchar(45),
+				contact varchar(45),
+				email varchar(45),
+				userName  varchar(45),
+				password varchar(45),
+				primary key (ID)
+			)
+        ]]>
+	</query>
+
+	<!-- remove table admin Query -->
+	<query id="DROP_TABLE_ADMIN">
+         <![CDATA[        
+            DROP TABLE IF EXISTS admin 
+        ]]>
+	</query>
+	
+	<!-- remove table client Query -->
+	<query id="DROP_TABLE_CLIENT">
+         <![CDATA[        
+            DROP TABLE IF EXISTS client 
+        ]]>
+	</query>
+
+	
+
+</Query>
